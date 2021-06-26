@@ -6,14 +6,20 @@ import FolderImage from "../../../assets/folder.png";
 import {useDispatch, useSelector} from "react-redux"
 import { fetchCategories } from "../../../redux/admin/category/adminCategoryAction";
 import Spinner from "../spinner/Spinner"
+import { useHistory } from "react-router";
 
 const HomePage = () => {
   const dispatch = useDispatch();
+  const history = useHistory
   const { categories, isLoading } = useSelector((state) => state.adminCategory);
 
   useEffect(() => {
     dispatch(fetchCategories());
   }, []);
+
+  const goToDetailCategori = () =>{
+    history.push("/detailPage")
+  }
 
   return (
 
@@ -51,7 +57,7 @@ const HomePage = () => {
               <div className="row">
               {categories.data && categories.data.map((category)=>{
                 return(
-                      <div className="content-container">
+                      <div className="content-container clickable" style={{ cursor:"pointer"}} onClick={goToDetailCategori}>
                         <div className="col-sm card-container">
                           <div className="card" style={{ width: "18rem" }}>
                             <img src={FolderImage} className="card-img-top" style={{ margin:"3rem",width: "15rem"}} alt="..." />
@@ -60,13 +66,10 @@ const HomePage = () => {
                         </div>
                       </div>
                     </div>
-                    </div>
+                  </div>
                 )
               })}
               </div>
-
-
-
             </div>
           </div>
         </div>
