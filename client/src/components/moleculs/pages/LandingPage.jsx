@@ -30,8 +30,8 @@ function LandingPage() {
 
   const NewCard = styled.div`
     border-radius: 4px;
-    min-height: 380px;
-    max-height: 380px;
+    min-height: 430px;
+    max-height: 430px;
     background: #fff;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
     transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
@@ -179,7 +179,7 @@ function LandingPage() {
                     </div>
                   </div>
                 )}
-                <div className="text-center">
+                <div className="mt-4 text-center">
                   <Button href="/news" className="btn btn-primary text-light">
                     More News
                   </Button>

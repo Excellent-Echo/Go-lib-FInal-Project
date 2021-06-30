@@ -122,7 +122,7 @@ const HomePage = () => {
                 </div>
               )}
             </div>
-            <div className="text-center">
+            <div className="mt-4 text-center">
               <Button href="/categories" className="btn btn-primary text-light">
                 More Categories
               </Button>

@@ -63,7 +63,7 @@ const AllCategori = () => {
   return (
     <>
       <Header />
-      <div className="container-fluid fluid-page vh-100">
+      <div className="container-fluid fluid-page" style={{ minHeight: "80vh" }}>
         <div className="container">
           <div className="row">
             {/* <div className="col">
@@ -108,52 +108,54 @@ const AllCategori = () => {
           {isLoading ? (
             <Loading />
           ) : (
-            <div className="row">
+            <div className="row mt-5">
               {search == ""
                 ? currentCategories.map((category, index) => {
                     return (
-                      <NewCard
-                        style={{ width: "12rem", margin: "1rem" }}
-                        key={index}
-                      >
-                        <a
-                          href={`/categories/${category.id}`}
-                          className="text-decoration-none"
-                          onClick={(e) => {
-                            e.preventDefault();
-                            dispatch(fetchOneCategory(category.id));
-                            history.push(`/categories/${category.id}`);
-                          }}
+                      <div className="col-6 col-md-4 col-xl-3 mb-4">
+                        <NewCard
+                          // style={{ width: "12rem", margin: "1rem" }}
+                          key={index}
                         >
-                          <Card.Img
-                            variant="top"
-                            src={FolderImage}
-                            style={{
-                              maxHeight: "20vh",
-                              minHeight: "20vh",
-                              padding: "1rem",
+                          <a
+                            href={`/categories/${category.id}`}
+                            className="text-decoration-none"
+                            onClick={(e) => {
+                              e.preventDefault();
+                              dispatch(fetchOneCategory(category.id));
+                              history.push(`/categories/${category.id}`);
                             }}
-                          />
-                          <Card.Body
-                            className="text-center"
-                            style={{ fontSize: "0.8rem" }}
                           >
-                            <Card.Title
+                            <Card.Img
+                              variant="top"
+                              src={FolderImage}
                               style={{
-                                fontSize: "1rem",
-                                display: "-webkit-box",
-                                WebkitBoxOrient: "vertical",
-                                WebkitLineClamp: "5",
-                                overflow: "hidden",
-                                textAlign: "center",
-                                fontWeight: "bold",
+                                maxHeight: "20vh",
+                                minHeight: "20vh",
+                                padding: "1rem",
                               }}
+                            />
+                            <Card.Body
+                              className="text-center"
+                              style={{ fontSize: "0.8rem" }}
                             >
-                              {category.category_name}
-                            </Card.Title>
-                          </Card.Body>
-                        </a>
-                      </NewCard>
+                              <Card.Title
+                                style={{
+                                  fontSize: "1rem",
+                                  display: "-webkit-box",
+                                  WebkitBoxOrient: "vertical",
+                                  WebkitLineClamp: "5",
+                                  overflow: "hidden",
+                                  textAlign: "center",
+                                  fontWeight: "bold",
+                                }}
+                              >
+                                {category.category_name}
+                              </Card.Title>
+                            </Card.Body>
+                          </a>
+                        </NewCard>
+                      </div>
                     );
                   })
                 : null}

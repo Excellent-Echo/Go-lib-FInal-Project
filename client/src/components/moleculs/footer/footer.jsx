@@ -20,7 +20,7 @@ const socMeds = [
 const Footer = () => {
   return (
     <div className="container-fluid footer-container ">
-      <footer className="text-center">
+      <footer className="container-fluid text-center">
         {/* footer top */}
         <div className="row justify-content-center footer-1">
           <div className="col-md-4 d-flex justify-content-center mb-3">
