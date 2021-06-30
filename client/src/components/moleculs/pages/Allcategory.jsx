@@ -19,7 +19,7 @@ const AllCategori = () => {
   const location = useLocation();
   const { categories, isLoading } = useSelector((state) => state.adminCategory);
   const [currentPage, setCurrentPage] = useState(1);
-  const [usersPerPage] = useState(20);
+  const [usersPerPage] = useState(10);
   var currentCategories = [];
   var filterSearch = [];
   const [search, setSearch] = useState("");
