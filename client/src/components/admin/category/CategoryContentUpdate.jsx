@@ -33,7 +33,7 @@ const CategoryContentUpdate = () => {
                     <td>{category.data.id}</td>
                   </tr>
                   <tr>
-                    <th>Full Name</th>
+                    <th>Category Name</th>
                     <td>{category.data.category_name}</td>
                   </tr>
                 </tbody>

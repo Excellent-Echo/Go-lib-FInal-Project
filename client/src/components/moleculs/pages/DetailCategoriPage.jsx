@@ -62,6 +62,7 @@ const DetailCategoriPage = () => {
   return (
     <>
       <Header />
+      <div className="container-fluid fluid-page vh-100">
       {isLoading ? (
         <Loading />
       ) : (
@@ -95,7 +96,6 @@ const DetailCategoriPage = () => {
                       className="form-control"
                       placeholder="Search File.."
                       onChange={searching}
-                      width="100wh"
                     />
                   </div>
                   <div className="col-2">
@@ -222,6 +222,7 @@ const DetailCategoriPage = () => {
           </div>
         </div>
       )}
+      </div>
       <Footer />
     </>
   );

@@ -138,8 +138,8 @@ function LandingPage() {
                                       variant="top"
                                       src={data.urlToImage || noImage}
                                       style={{
-                                        maxHeight: "20vh",
-                                        minHeight: "20vh",
+                                        maxHeight: "25vh",
+                                        minHeight: "25vh",
                                         padding: "1rem",
                                       }}
                                     />

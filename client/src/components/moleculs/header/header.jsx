@@ -15,7 +15,7 @@ const Header = () => {
   const accessToken = localStorage.getItem("accessToken");
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid navbar-light bg-white">
         <nav className="navbar navbar-expand-lg navbar-light bg-white">
           <div className="container">
             <div
