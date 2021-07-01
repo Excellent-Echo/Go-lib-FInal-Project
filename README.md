@@ -4,9 +4,9 @@
 
 Visit here: https://go-library.netlify.app
 
-![image-20210701095435377](C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20210701095435377.png)
+![image](https://user-images.githubusercontent.com/76910530/124059553-78e0b600-da55-11eb-857f-dcf77d372d58.png)
 
-![image-20210701095505151](C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20210701095505151.png)
+![image](https://user-images.githubusercontent.com/76910530/124059584-839b4b00-da55-11eb-9196-425cc3599852.png)
 
 # Contents
 
