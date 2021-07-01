@@ -11,8 +11,8 @@ Visit here: https://go-library.netlify.app
 # Contents
 
 - [Introduction](https://github.com/Excellent-Echo/Go-lib-FInal-Project#introduction)
-- [MVP](https://github.com/alichtman/shallow-backup#minimum-viable-product)
-- [Tech Stack](https://github.com/alichtman/shallow-backup#tech-stack)
+- [MVP](https://github.com/Excellent-Echo/Go-lib-FInal-Project#minimum-viable-product)
+- [Tech Stack](https://github.com/Excellent-Echo/Go-lib-FInal-Project#tech-stack)
 
 ### Introduction
 
